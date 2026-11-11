@@ -1,0 +1,629 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="only light" />
+  <meta name="supported-color-schemes" content="light" />
+  <meta name="theme-color" content="#F3EFE6" />
+  <title>Herman &amp; Danielle | 6 February 2027</title>
+  <meta name="description" content="Join us to celebrate the wedding of Herman Swanepoel &amp; Danielle Hamilton on Saturday, 6 February 2027 at Intiem Weddings, Pretoria." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Herman &amp; Danielle | 6 February 2027" />
+  <meta property="og:description" content="Saturday, 6 February 2027 &bull; Intiem Weddings, Pretoria" />
+  <meta property="og:image" content="/photo-2.jpg" />
+  <meta property="og:image" content="/photo-2.jpg" />
+  <meta property="og:image" content="/photo-2.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=9" />
+</head>
+<body class="locked">
+
+  <!-- ==================== PASSCODE GATE OVERLAY ==================== -->
+  <div id="passcode-gate" class="passcode-gate" aria-modal="true" role="dialog">
+    <div class="passcode-card">
+      <p class="eyebrow">6 FEBRUARY 2027 &bull; PRETORIA</p>
+      <h1 class="gate-title">Herman <span>&amp;</span> Danielle</h1>
+      <div class=" botanical-divider" aria-hidden="true">
+        <span>&#10087;</span>
+      </div>
+      <p class="gate-subtitle">Please enter the guest passcode from your invitation to view our wedding details and RSVP.</p>
+      <form id="passcode-form" class="passcode-form" autocomplete="off">
+        <div class="input-group">
+          <input
+            type="password"
+            id="passcode-input"
+            placeholder="Enter passcode..."
+            aria-label="Guest Passcode"
+            required
+          />
+          <button type="button" id="toggle-passcode" class="toggle-vis-btn" aria-label="Show passcode">
+            Show
+          </button>
+        </div>
+        <p id="passcode-error" class="error-msg" hidden>Incorrect passcode. Please check your invitation and try again.</p>
+        <button type="submit" class="btn btn-primary btn-full">Enter Website</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==================== MAIN WEBSITE CONTENT ==================== -->
+  <div id="site-wrapper" class="site-wrapper">
+
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">H <span>&amp;</span> D</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-links" id="nav-links">
+          <a href="#details">The Day</a>
+          <a href="#byob">Important Notice</a>
+          <a href="#dress-code">Dress Code</a>
+          <a href="#gifts">Wishing Well</a>
+          <a href="#accommodation">Stay</a>
+          <a href="#photos">Photos</a>
+          <a href="#faq">FAQs</a>
+          <a href="#rsvp" class="nav-rsvp-btn">RSVP</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-bg-image" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Herman Swanepoel <span class="amp">&amp;</span> Danielle Hamilton</h1>
+        <p class="hero-date">Saturday, 6 February 2027</p>
+        <p class="hero-venue">Intiem Weddings &bull; De Wildt, Pretoria</p>
+
+        <!-- Countdown Timer -->
+        <div class="countdown" id="countdown" aria-label="Countdown to wedding day">
+          <div class="countdown-item">
+            <span class="countdown-num" id="cd-days">000</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-num" id="cd-hours">00</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-num" id="cd-mins">00</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-num" id="cd-secs">00</span>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#rsvp" class="btn btn-light">RSVP Before 30 Nov 2026</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Couple Photo Strip -->
+    <section class="photo-strip" aria-label="Couple Gallery">
+      <div class="container">
+        <div class="placeholder-grid">
+          <div class="couple-photo-frame">
+            <img src="photo-1.jpg" alt="Herman and Danielle holding hands at sunset" />
+            <div class="couple-photo-caption">
+              <p>Herman &amp; Danielle</p>
+            </div>
+          </div>
+          <div class="couple-photo-frame tall">
+            <img src="photo-2.jpg" alt="Herman and Danielle champagne toast" />
+            <div class="couple-photo-caption">
+              <p>6.02.2027</p>
+            </div>
+          </div>
+          <div class="couple-photo-frame">
+            <img src="photo-3.jpg" alt="Herman and Danielle smiling at each other" />
+            <div class="couple-photo-caption">
+              <p>Forever Begins Here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ceremony & Venue Details -->
+    <section id="details" class="section section-parchment">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">THE CELEBRATION</p>
+          <h2 class="section-title">When &amp; Where</h2>
+          <div class="botanical-divider"><span>&#10087;</span></div>
+        </div>
+
+        <div class="details-grid">
+          <div class="detail-card">
+            <div class="detail-icon" aria-hidden="true">&#128343;</div>
+            <h3>Date &amp; Time</h3>
+            <p class="detail-highlight">Saturday, 6 February 2027</p>
+            <p><strong>Arrival Time:</strong> 15:30</p>
+            <p><strong>Ceremony Starts:</strong> 16:00 Promptly</p>
+            <p class="detail-note">Please allow a few extra minutes to park and find your seat before the ceremony begins.</p>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-icon" aria-hidden="true">&#128205;</div>
+            <h3>The Venue</h3>
+            <p class="detail-highlight">Intiem Weddings</p>
+            <p>R513, Plot 116 De Wildt St</p>
+            <p>Pretoria, 0251</p>
+            <div class="detail-actions">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Intiem+Weddings+R513+Plot+116+De+Wildt+St+Pretoria+0251"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline"
+              >
+                Open in Google Maps
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPORTANT BYOB CALLOUT BANNER -->
+    <section id="byob" class="section section-olivewood">
+      <div class="container">
+        <div class="byob-banner">
+          <p class="eyebrow eyebrow-light">VERY IMPORTANT NOTICE</p>
+          <h2 class="byob-title">Bring Your Own Drinks</h2>
+          <p class="byob-text">
+            Please note that <strong>no alcohol will be sold at the venue</strong> (there is no cash bar).
+            All guests are warmly invited and encouraged to bring their own favourite alcoholic beverages, wine, beer, and mixers for the celebration â€” <strong>no corkage fee will be applied</strong>!
+          </p>
+          <div class="byob-badges">
+            <span class="byob-badge">&#127863; Bring Your Favourite Drinks</span>
+            <span class="byob-badge">&#128683; No Cash Bar On-Site</span>
+            <span class="byob-badge">&#10003; No Corkage Fee</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dress Code -->
+    <section id="dress-code" class="section section-sand">
+      <div class="container container-narrow">
+        <div class="section-header" style="margin-bottom: 0;">
+          <p class="eyebrow">WHAT TO WEAR</p>
+          <h2 class="section-title">Dress Code</h2>
+          <div class="botanical-divider"><span>&#10087;</span></div>
+          <p class="section-subtitle">
+            Our dress code is <strong>Semi-Formal</strong>. There are no specific colour requirements â€” please wear whatever you love and feel most comfortable celebrating in!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honeymoon Wishing Well / Gift Registry -->
+    <section id="gifts" class="section section-parchment">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <p class="eyebrow">WISHING WELL</p>
+          <h2 class="section-title">Honeymoon Fund</h2>
+          <div class="botanical-divider"><span>&#10087;</span></div>
+          <p class="section-subtitle">
+            Your presence at our wedding is the greatest gift we could ask for! However, if you would like to bless us with a gift, a contribution towards our honeymoon and future together would be deeply appreciated.
+          </p>
+        </div>
+
+        <div class="bank-card">
+          <div class="bank-header">
+            <span class="bank-badge">Banking Details</span>
+            <h3>Honeymoon Cash Fund</h3>
+          </div>
+          <div class="bank-details-list">
+            <div class="bank-row">
+              <span class="bank-label">Bank</span>
+              <span class="bank-val">Capitec</span>
+            </div>
+            <div class="bank-row">
+              <span class="bank-label">Account Holder</span>
+              <span class="bank-val">NAME & SURNAME</span>
+            </div>
+            <div class="bank-row">
+              <span class="bank-label">Account Type</span>
+              <span class="bank-val">Main Account</span>
+            </div>
+            <div class="bank-row">
+              <span class="bank-label">Account Number</span>
+              <span class="bank-val bank-acc-num" id="acc-number">1234567890</span>
+            </div>
+            <div class="bank-row">
+              <span class="bank-label">Branch Code</span>
+              <span class="bank-val">000000</span>
+            </div>
+            <div class="bank-row">
+              <span class="bank-label">SWIFT / BIC</span>
+              <span class="bank-val">SWIFTCODE</span>
+            </div>
+            <div class="bank-row">
+              <span class="bank-label">Reference</span>
+              <span class="bank-val">Name + Honeymoonfund</span>
+            </div>
+          </div>
+          <div class="bank-actions">
+            <button type="button" id="copy-bank-btn" class="btn btn-outline">
+              Copy Account Number (1234567890)
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accommodation Section -->
+    <section id="accommodation" class="section section-sand">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">WHERE TO STAY</p>
+          <h2 class="section-title">Travel &amp; Accommodation</h2>
+          <div class="botanical-divider"><span>&#10087;</span></div>
+          <p class="section-subtitle">
+            For guests travelling from out of town or wanting to stay nearby, here are verified guest houses and lodges sorted by distance from <strong>Intiem Weddings</strong>.
+          </p>
+        </div>
+
+        <div class="acc-distance-group">
+          <h3 class="acc-group-title">4 km â€“ 6 km from Intiem Weddings (Closest)</h3>
+          <div class="acc-grid">
+            <a href="https://www.lekkeslaap.co.za/akkommodasie/de-oude-kothuis" target="_blank" rel="noopener noreferrer" class="acc-card">
+              <span class="acc-distance">4 km away</span>
+              <h4>De Oude Kothuis</h4>
+              <p>Intimate self-catering units in De Wildt on LekkeSlaap.</p>
+              <span class="acc-link">View on LekkeSlaap &rarr;</span>
+            </a>
+
+            <a href="https://bethesdalodge.co.za/" target="_blank" rel="noopener noreferrer" class="acc-card">
+              <span class="acc-distance">5 km away</span>
+              <h4>Bethesda Mountain Lodge</h4>
+              <p>Scenic bushveld retreat &amp; self-catering cottages in De Wildt.</p>
+              <span class="acc-link">Visit Website &rarr;</span>
+            </a>
+
+            <a href="https://tutuwedzo.co.za/" target="_blank" rel="noopener noreferrer" class="acc-card">
+              <span class="acc-distance">6 km away</span>
+              <h4>Tutuwedzo Lodge</h4>
+              <p>34-hectare game farm &amp; lodge in the De Wildt area.</p>
+              <span class="acc-link">Visit Website &rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="acc-distance-group">
+          <h3 class="acc-group-title">15 km from Intiem Weddings (Hartbeespoort Area)</h3>
+          <div class="acc-grid">
+            <a href="https://www.kassaboera.co.za/" target="_blank" rel="noopener noreferrer" class="acc-card">
+              <span class="acc-distance">15 km away</span>
+              <h4>Kassaboera Lodge</h4>
+              <p>Waterfront lodge in Schoemansville overlooking the dam.</p>
+              <span class="acc-link">Visit Website &rarr;</span>
+            </a>
+
+            <a href="https://www.seasonssa.co.za/" target="_blank" rel="noopener noreferrer" class="acc-card">
+              <span class="acc-distance">15 km away</span>
+              <h4>Seasons Golf, Leisure &amp; Spa</h4>
+              <p>Bushveld resort &amp; golf estate in Hartbeespoort.</p>
+              <span class="acc-link">Visit Website &rarr;</span>
+            </a>
+
+            <a href="https://www.lamontagne-guestlodge.co.za/" target="_blank" rel="noopener noreferrer" class="acc-card">
+              <span class="acc-distance">15 km away</span>
+              <h4>La Montagne Guest Lodge</h4>
+              <p>Mountain-slope guest lodge with sweeping views.</p>
+              <span class="acc-link">Visit Website &rarr;</span>
+            </a>
+
+            <a href="https://www.lekkeslaap.co.za/akkommodasie/migdsh-guesthouse" target="_blank" rel="noopener noreferrer" class="acc-card">
+              <span class="acc-distance">15 km away</span>
+              <h4>Migd&acirc;sh Guesthouse</h4>
+              <p>Modern guesthouse in Magalies Golf Estate on LekkeSlaap.</p>
+              <span class="acc-link">View on LekkeSlaap &rarr;</span>
+            </a>
+
+            <a href="https://www.3oa.co.za/" target="_blank" rel="noopener noreferrer" class="acc-card">
+              <span class="acc-distance">15 km away</span>
+              <h4>Three Oaks and an Aloe</h4>
+              <p>4-star boutique hotel with peaceful gardens in Hartbeespoort.</p>
+              <span class="acc-link">Visit Website &rarr;</span>
+            </a>
+
+            <a href="https://nehema.co.za/" target="_blank" rel="noopener noreferrer" class="acc-card">
+              <span class="acc-distance">15 km away</span>
+              <h4>Nehema Manor</h4>
+              <p>Self-catering estate at the foot of the Magaliesberg mountains.</p>
+              <span class="acc-link">Visit Website &rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP Form Section (Placed right after Accommodation & Honeymoon Fund) -->
+    <section id="rsvp" class="section section-parchment">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <p class="eyebrow">KINDLY RESPOND BY 30 NOVEMBER 2026</p>
+          <h2 class="section-title">R.S.V.P.</h2>
+          <div class="botanical-divider"><span>&#10087;</span></div>
+          <p class="section-subtitle">
+            Replying for your partner or family? You can add everyone on your invitation below so you only need to submit this form once.
+          </p>
+        </div>
+
+        <form id="rsvp-form" class="rsvp-card">
+          <!-- Guests / Family Members Dynamic List -->
+          <div class="form-section">
+            <div class="form-section-header">
+              <div>
+                <h3 class="form-section-title">1. Invited Guests &amp; Meal Selection</h3>
+                <p class="form-helper">Please note: Due to venue capacity, attendance is strictly by invitation only (no plus-ones).</p>
+              </div>
+            </div>
+
+            <div class="menu-preview-box">
+              <p class="menu-preview-title">Wedding Menu Options</p>
+              <div class="menu-preview-grid">
+                <div class="menu-preview-item">
+                  <strong>Option 1: Chicken Roulade</strong>
+                  <p>Filled with spinach, mushroom &amp; feta, served on either basmati rice or thinly sliced potato and seasonal vegetables.</p>
+                </div>
+                <div class="menu-preview-item">
+                  <strong>Option 2: Slow Roasted Beef Short Rib</strong>
+                  <p>Served with basmati rice, tomato and red wine sauce and seasonal roasted vegetables.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="guests-container" class="guests-container">
+              <!-- Guest 1 inserted by JS -->
+            </div>
+
+            <button type="button" id="add-guest-btn" class="btn btn-outline btn-add-guest">
+              + Add Another Invited Family Member
+            </button>
+          </div>
+
+          <!-- Song Requests -->
+          <div class="form-section">
+            <h3 class="form-section-title">2. Song Requests (Optional)</h3>
+            <p class="form-helper">What songs will get you onto the dance floor? Add as many as you like!</p>
+            <div id="songs-container" class="songs-container">
+              <div class="song-row">
+                <input type="text" name="song[]" class="song-input" placeholder="Song Title &amp; Artist" />
+              </div>
+            </div>
+            <button type="button" id="add-song-btn" class="btn btn-text">+ Add Another Song</button>
+          </div>
+
+          <!-- Message to the Couple -->
+          <div class="form-section">
+            <div class="form-field">
+              <label for="rsvp-notes">Personal Note or Message for Herman &amp; Danielle (Optional)</label>
+              <textarea id="rsvp-notes" name="notes" rows="3" placeholder="Any special wishes or notes..."></textarea>
+            </div>
+          </div>
+
+          <div class="form-submit-area">
+            <button type="submit" id="rsvp-submit-btn" class="btn btn-primary btn-full">
+              Submit RSVP
+            </button>
+          </div>
+        </form>
+
+        <!-- Post-RSVP Confirmation -->
+        <div id="rsvp-success" class="rsvp-success-card" hidden>
+          <div class="success-icon">&#10003;</div>
+          <h3>Thank You for Your RSVP!</h3>
+          <p id="rsvp-success-text">
+            Your RSVP has been successfully received! We are so excited and look forward to celebrating our special day with you on 6 February 2027.
+          </p>
+          <div style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--sand);">
+            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.85rem;">
+              In case you missed them above, don't forget to check our Wishing Well and nearby stay options:
+            </p>
+            <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+              <a href="#gifts" class="btn btn-outline btn-sm">View Honeymoon Fund</a>
+              <a href="#accommodation" class="btn btn-outline btn-sm">View Accommodation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shared Wedding Photo Uploads & QR Code -->
+    <section id="photos" class="section section-sand">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">CAPTURE THE MOMENTS</p>
+          <h2 class="section-title">Share &amp; View Wedding Photos</h2>
+          <div class="botanical-divider"><span>&#10087;</span></div>
+          <p class="section-subtitle">
+            Help us capture our special day from every angle! Enter your name below to create your own guest album (or add more photos to your album later), and open any guest's album below to browse or save their photos.
+          </p>
+        </div>
+
+        <div class="photo-upload-card container-narrow">
+          <div class="qr-box">
+            <img
+              id="qr-code-img"
+              src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&color=2A2C22&bgcolor=F3EFE6&data=https://your-domain.com/#photos"
+              alt="QR Code for Guest Photo Uploads"
+              width="180"
+              height="180"
+            />
+            <span class="qr-caption">Scan at the wedding to upload</span>
+          </div>
+
+          <div class="photo-upload-info">
+            <h3>Upload Photos to Your Album</h3>
+            <p>
+              Enter your name and select photos from your camera roll. Using the same name later will automatically add new photos to your album!
+            </p>
+
+            <form id="photo-upload-form" class="photo-upload-form">
+              <div class="form-field" style="margin-top: 0; margin-bottom: 0.85rem;">
+                <label for="uploader-name">Your Name (Creates or Adds to Your Album) *</label>
+                <input
+                  type="text"
+                  id="uploader-name"
+                  list="existing-albums-list"
+                  placeholder="e.g. Aunt Marie / Johan"
+                  required
+                />
+                <datalist id="existing-albums-list"></datalist>
+              </div>
+
+              <input type="file" id="photo-file-input" accept="image/*" multiple hidden />
+
+              <div class="upload-actions">
+                <button type="button" id="select-photos-btn" class="btn btn-outline btn-full">
+                  &#128247; Select Photos From Camera Roll
+                </button>
+                <p id="selected-files-info" class="selected-files-info" hidden></p>
+                <button type="submit" id="upload-submit-btn" class="btn btn-primary btn-full" hidden>
+                  Upload Selected Photos
+                </button>
+              </div>
+
+              <div id="upload-progress-box" class="upload-progress-box" hidden>
+                <div class="progress-bar-track">
+                  <div id="upload-progress-bar" class="progress-bar-fill" style="width: 0%;"></div>
+                </div>
+                <p id="upload-status-text" class="upload-status-text">Preparing photos...</p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Live Shared Guest Photo Gallery (Grouped by Guest Albums) -->
+        <div class="shared-gallery-wrapper">
+          <div class="gallery-toolbar">
+            <div>
+              <h3 class="gallery-heading" id="gallery-heading">Guest Photo Albums</h3>
+              <p class="gallery-subheading" id="gallery-subheading">
+                Tap on any guest's album below to open and save their photos.
+              </p>
+            </div>
+            <div class="gallery-toolbar-actions">
+              <button type="button" id="back-to-albums-btn" class="btn btn-outline btn-sm" hidden>
+                &larr; All Guest Albums
+              </button>
+              <button type="button" id="refresh-gallery-btn" class="btn btn-outline btn-sm">
+                &#8635; Refresh Albums
+              </button>
+              <button type="button" id="save-all-photos-btn" class="btn btn-primary btn-sm" hidden>
+                &#11015; Save Album Photos
+              </button>
+            </div>
+          </div>
+
+          <div id="gallery-grid" class="gallery-grid">
+            <p class="gallery-empty-msg" id="gallery-status-msg">
+              No guest albums created yet â€” enter your name and upload a photo above to create the first album!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal for Viewing & Saving Full-Size Photos -->
+    <div id="photo-lightbox" class="photo-lightbox" hidden>
+      <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+      <div class="lightbox-content">
+        <button type="button" id="lightbox-close" class="lightbox-close" aria-label="Close preview">&times;</button>
+        <img id="lightbox-img" src="" alt="Wedding Photo Preview" referrerpolicy="no-referrer" />
+        <div class="lightbox-footer">
+          <span id="lightbox-caption" class="lightbox-caption"></span>
+          <a id="lightbox-download" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-light btn-sm">
+            &#11015; Save / Download Photo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Frequently Asked Questions -->
+    <section id="faq" class="section section-parchment">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <p class="eyebrow">GOOD TO KNOW</p>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <div class="botanical-divider"><span>&#10087;</span></div>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <h4>Is there a bar at the venue? Can we bring our own alcohol?</h4>
+            <p>
+              <strong>Alcohol will NOT be sold at the venue.</strong> Please bring your own alcoholic drinks, wine, beer, cider, and mixers! We want everyone to have a wonderful time with their favourite drinks in hand, and <strong>no corkage fee will be applied</strong>.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h4>When is the RSVP deadline?</h4>
+            <p>
+              Please submit your RSVP via our website on or before <strong>30 November 2026</strong> so we can finalize catering and seating with the venue.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h4>What time should we arrive?</h4>
+            <p>
+              The ceremony begins promptly at <strong>16:00</strong>. Please aim to arrive at Intiem Weddings around <strong>15:30</strong> so you have plenty of time to park and take your seats.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h4>Can I bring a plus-one?</h4>
+            <p>
+              Due to venue capacity limits, we can only accommodate guests formally named on your wedding invitation. Thank you so much for understanding!
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h4>What is the dress code?</h4>
+            <p>
+              Our dress code is <strong>Semi-Formal</strong>. There are no specific colour requirements â€” please wear whatever you feel most comfortable in!
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h4>How do I RSVP for my whole family?</h4>
+            <p>
+              In the RSVP section above, simply click <em>"+ Add Another Invited Family Member"</em> for each person included on your invitation. You can select attendance, meal choices, and allergies for each person in one go.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <h2 class="footer-names">Herman &amp; Danielle</h2>
+        <p class="footer-date">6 February 2027 &bull; Intiem Weddings, Pretoria</p>
+        <p class="footer-contact">
+          Questions? Contact Herman (<a href="tel:0123456789">012 345 6789</a>) or Danielle (<a href="tel:0123456789">012 345 6789</a>)
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js?v=9"></script>
+</body>
+</html>
+
